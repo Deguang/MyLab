@@ -8,8 +8,7 @@
     "check": "node check.js"
   },
   "pre-commit": [
-    "precommit-msg",
-    "check"
+    "precommit-msg"
   ],
   "author": "",
   "license": "ISC",
@@ -19,6 +18,7 @@
   },
   "dependencies": {
     "eslint": "^3.0.0",
+    "jshint": "^2.9.2",
     "pre-commit": "^1.1.3"
   }
 }
