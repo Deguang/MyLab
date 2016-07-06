@@ -1,3 +1,4 @@
+
 funtion test1(num) {
     if(typeof num != 'Number') {
         return 0;
@@ -6,6 +7,7 @@ funtion test1(num) {
 }    
 <<<<<<<
 
+o
 test1(2);
 <<<<<<<
 test1('asd');
