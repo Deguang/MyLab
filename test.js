@@ -5,6 +5,7 @@ funtion test1(num) {
     return num++;
 }    
 <<<<<<<
+
 test1(2);
 <<<<<<<
 test1('asd');
