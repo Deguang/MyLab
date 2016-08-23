@@ -9,9 +9,9 @@ define(['jquery', 'dataTable','popWin','base','verify','form','datepicker', 'dat
     var dismissionHtml = $("#employee-dismission-win").html();
     $("#employee-dismission-win").html("").remove();
 
-    var winH = $(window).height();
+    var winH = $(window).height(); 
 
-                
+
 
     /*在职员工列表*/
     function initEmployeeList(ajaxData){
