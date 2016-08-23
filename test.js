@@ -3,5 +3,5 @@ function test(num) {
         return 0;
     }
     return num++;
-}       
-test('asd');    
+}    
+test('asd');
