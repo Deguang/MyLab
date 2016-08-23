@@ -11,6 +11,7 @@ define(['jquery', 'dataTable','popWin','base','verify','form','datepicker', 'dat
 
     var winH = $(window).height();
 
+                
 
     /*在职员工列表*/
     function initEmployeeList(ajaxData){
