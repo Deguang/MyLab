@@ -5,6 +5,7 @@ var fs = require('fs'),
 // 获取本次提交文件列表，并对文件内容进行匹配判断
 var processCode = 0,
     check = exec('git diff-index --cached --name-only HEAD', (error, stdout, stderr) => {
+        console.log('1111')
 
     if (error) {
         console.log(error.stack);
@@ -47,12 +48,10 @@ var processCode = 0,
                 processCode = 1;
             }
         }
+        console.log('1111')
         return ;
     })
 
 });
 
-        console.log(processCode);
-
-//check.then(process.exit(processCode));    
-
+        //console.log(processCode);

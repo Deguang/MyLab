@@ -1,10 +1,10 @@
 /*
-Error: Invalid CSS after "    1111": expected "{", was "}"
+Error: Invalid CSS after "    11112": expected "{", was "}"
         on line 4 of /Users/lideguang/Documents/mySpace/MyLab/test/scss/ceshi.scss
 
 1: 
 2: .ceshi {
-3:     1111
+3:     11112
 4: }
 
 Backtrace:
@@ -36,4 +36,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Invalid CSS after \"    1111\": expected \"{\", was \"}\"\A         on line 4 of /Users/lideguang/Documents/mySpace/MyLab/test/scss/ceshi.scss\A \A 1: \A 2: .ceshi {\A 3:     1111\A 4: }"; }
+  content: "Error: Invalid CSS after \"    11112\": expected \"{\", was \"}\"\A         on line 4 of /Users/lideguang/Documents/mySpace/MyLab/test/scss/ceshi.scss\A \A 1: \A 2: .ceshi {\A 3:     11112\A 4: }"; }
