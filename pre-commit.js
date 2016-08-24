@@ -49,5 +49,5 @@ var processCode = 0,
     })
 });
 
-check.then(process.exit(processCode));
+check.then(process.exit(processCode));   
 
