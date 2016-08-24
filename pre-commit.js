@@ -1,6 +1,6 @@
 var fs = require('fs'),
     readline = require('readline'),
-    exec = require('child_process').exec;
+    exec = require('child_process').execSync;
 
 // 获取本次提交文件列表，并对文件内容进行匹配判断
 var processCode = 0,
@@ -50,7 +50,9 @@ var processCode = 0,
         return ;
     })
 
-    console.log(processCode);
 });
+
+        console.log(processCode);
+
 //check.then(process.exit(processCode));    
 
