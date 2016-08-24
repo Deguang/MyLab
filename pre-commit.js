@@ -47,7 +47,6 @@ var processCode = 0,
                 processCode = 1;
             }
         }
-        console.log('1111')
         return ;
     })
 
