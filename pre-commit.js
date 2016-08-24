@@ -50,7 +50,7 @@ var processCode = 0,
         return ;
     })
 
-    console.log('111')
+    console.log(processCode);
 });
-//check.then(process.exit(processCode));   
+//check.then(process.exit(processCode));    
 
