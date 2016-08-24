@@ -52,4 +52,3 @@ var processCode = 0,
 
 });
 
-        //console.log(processCode);
