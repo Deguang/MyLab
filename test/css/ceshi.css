@@ -1,23 +1,28 @@
 /*
-Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.
-        on line 38 of /Users/lideguang/Documents/mySpace/MyLab/test/css/ceshi.css
+Error: Invalid CSS after "    1111": expected "{", was "}"
+        on line 4 of /Users/lideguang/Documents/mySpace/MyLab/test/scss/ceshi.scss
 
-33: /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/bin/sass:13:in `<top (required)>'
-34: /usr/local/bin/sass:23:in `load'
-35: /usr/local/bin/sass:23:in `<main>'
-36: *\/
-37: body:before {
-38:   white-space: pre;
-39:   font-family: monospace;
-40:   content: "Error: Invalid CSS after \"    111\": expected \"{\", was \"}\"\A         on line 4 of /Users/lideguang/Documents/mySpace/MyLab/test/scss/ceshi.scss\A \A 1: \A 2: .ceshi {\A 3:     111\A 4: }"; }
+1: 
+2: .ceshi {
+3:     1111
+4: }
 
 Backtrace:
-/Users/lideguang/Documents/mySpace/MyLab/test/css/ceshi.css:38
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:483:in `block in tabulate'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:441:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:441:in `each_with_index'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:441:in `tabulate'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:406:in `_to_tree'
+/Users/lideguang/Documents/mySpace/MyLab/test/scss/ceshi.scss:4
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:654:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:724:in `declaration_or_ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:674:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:663:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:655:in `block'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:663:in `block_contents'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
+/Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:414:in `run'
@@ -31,4 +36,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Inconsistent indentation: 2 spaces were used for indentation, but the rest of the document was indented using 8 spaces.\A         on line 38 of /Users/lideguang/Documents/mySpace/MyLab/test/css/ceshi.css\A \A 33: /Library/Ruby/Gems/2.0.0/gems/sass-3.4.21/bin/sass:13:in `<top (required)>'\A 34: /usr/local/bin/sass:23:in `load'\A 35: /usr/local/bin/sass:23:in `<main>'\A 36: */\A 37: body:before {\A 38:   white-space: pre;\A 39:   font-family: monospace;\A 40:   content: \"Error: Invalid CSS after \\"    111\\": expected \\"{\\", was \\"}\\"\A         on line 4 of /Users/lideguang/Documents/mySpace/MyLab/test/scss/ceshi.scss\A \A 1: \A 2: .ceshi {\A 3:     111\A 4: }\"; }"; }
+  content: "Error: Invalid CSS after \"    1111\": expected \"{\", was \"}\"\A         on line 4 of /Users/lideguang/Documents/mySpace/MyLab/test/scss/ceshi.scss\A \A 1: \A 2: .ceshi {\A 3:     1111\A 4: }"; }

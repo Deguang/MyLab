@@ -29,6 +29,7 @@ var processCode = 0,
             if(line.indexOf('<<<<<<< HEAD') != '-1') {
                 conflict.count ++;
                 conflict.lineNum.push(lineNum);
+                processCode = 1;
             }
         })
         rl.on('close', function(){
@@ -43,11 +44,13 @@ var processCode = 0,
             var content = fs.readFileSync(i, 'utf8');
             if(content.indexOf('body:before') != '-1') {
                 console.log('[Error] ' + i.split('.')[0] + '.scss compile error, fobidden commit!');
+                processCode = 1;
             }
         }
         return ;
     })
-});
 
-check.then(process.exit(processCode));   
+    console.log('111')
+});
+//check.then(process.exit(processCode));   
 
