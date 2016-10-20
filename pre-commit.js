@@ -17,11 +17,10 @@ var check = exec('git diff-index --cached --name-only HEAD', (error, stdout, std
                     return ;
                 }
                 // 冲突判断
-                // var conflict = {
-                //         count: 0,
-                //         lineNum: []
-                //     },
-                //     lineNum = 0;
+                var conflict = {
+                        count: 0,
+                        lineNum: []
+                    };
                 // var rl = readline.createInterface({
                 //     input: fs.createReadStream(i, {encoding: 'utf8'}),
                 //     output: null
@@ -49,17 +48,21 @@ var check = exec('git diff-index --cached --name-only HEAD', (error, stdout, std
                         processCode = 1;
                     }
                 }
+                fs.readFileSync(i, 'utf8').split('\n').forEach((elem, index) => {
+                    if(elem.indexOf('<<<<<<< HEAD') != '-1') {
+                        console.error('[Error] ' + i + ' has unsolved conflict, fobidden commit!');
+                        console.error('        line num: ' + (index++));
+                    }
+                });
+
                 return;
             });
-            console.log(processCode)
-            if(processCode == '1') {
-                resolve('hasError')
-            }
+            // 结束Promises
+            resolve(processCode)
         });
         files.then(
             function(value){
-                console.log('processCode:' + processCode);
-                console.log(value);
+                process.exit(processCode)
             }, function(error){
                 console.log(error);
             });
